@@ -1,0 +1,331 @@
+*{
+    border:border-box;
+    margin:0;
+    padding: 0;
+
+}
+.main{
+   width:100vw;
+   height: 100vh; 
+   background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(night3.jpg);
+   background-position: center;
+   background-size: cover;
+}
+.nav-bar{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+/* logo */
+
+.logo{
+    color:#ff7e00;
+    font-size: 2.2vmax;
+    padding-top: 0.7vmax;
+    padding-left: 0.8vmax;
+    font-family: Arial;
+}
+@media only screen and (max-width:600px) {
+    .logo{
+        font-size:4vmax;
+    } 
+}
+/* links menu */
+.a1{
+    color:white;
+    text-decoration: none;
+    font-size:1vmax;
+    font-weight: bold;
+    margin: 4vmax;
+    font-family: Arial;
+    transition: 0.2s ease-in;
+}
+
+.menu{
+    margin-top: 15px;
+}
+.menu-icon{
+    display: none;
+}
+ul a:hover{
+ color:orange;
+}
+
+@media only screen and (max-width:600px) {
+    .menu{
+        display: none;
+    }
+    .menu-icon{
+        display: contents;
+        color: aliceblue;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px) {
+    .nav-bar{
+        height: 6vmax;
+    }
+    .a1{
+        font-size:0.8vmax;
+    }
+    .logo{
+        font-size:1.6vmax;
+    } 
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main2 p{
+            font-size: 1.4vmax;
+            letter-spacing: 0.2vmax;
+            line-height:1.9vmax;
+    }
+}
+/* search bar */
+.search-bar{
+    display: flex;
+    width:19vw;
+    margin-top: 1vmax;
+}
+.s-button a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial;
+    font-size:1vmax;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+@media only screen and (max-width:600px) {
+    .search-bar{
+        width:33vw;
+    }
+    .s-button a{
+        font-size:1.2vmax;
+    }
+    .search{
+        font-size:1vmax;
+    } 
+}
+.search{
+    height:2.3vmax;
+    width:13vmax;
+    border:1px solid #ff7e00;
+    border-top-left-radius: 0.4vmax;
+    border-bottom-left-radius:0.4vmax;
+    float:left;
+    background-color:transparent;
+    font-size:0.9vmax;
+    font-family: Arial;
+    color:white;
+}
+.s-button{ 
+height:2.3vmax;
+width:6vmax;
+background-color: #ff7e00;
+border: 1px solid #ff7e00;
+border-top-right-radius: 0.4vmax;
+border-bottom-right-radius: 0.4vmax;
+margin-bottom: 1vmax;
+}
+
+.s-button:hover{
+    background:linear-gradient(to top, yellow,orange,red);
+}
+
+/* part2 */
+.main2{
+    height:50vh;
+    width: 20vw;
+    color:white;
+    margin-left:6vmax ;
+    margin-top: 8.5vmax;
+ 
+}
+.par{
+    font-size: 0.9vmax;
+    font-family: Arial;
+    letter-spacing: 0.1vmax;
+    line-height:1.7vmax;
+}
+.head{
+    font-family:'Times New Roman';
+    font-size: 3vmax;
+    letter-spacing: 0.1vmax;
+}
+@media only screen and (max-width:600px) {
+    .main2{
+        height:28vh;
+        width: 80vw;
+        color:white;
+        margin-left:5vmax ;
+        margin-top: 2vmax;
+    } 
+    .par{
+        font-size: 1.8vmax;
+        letter-spacing: 0.2vmax;
+        line-height:1.9vmax;
+    }
+    .head{
+        font-size: 4vmax;
+    }
+}
+#dev{
+    color:#ff7e00;
+}
+.j-button{
+    height:2.7vmax;
+    width:8.5vmax;
+    background-color: #ff7e00;
+    border: 1px solid #ff7e00;
+    border-radius:0.5vmax;
+}
+.j-btn-1{
+     margin-top: 1.2vmax;
+}
+.j-btn-2{
+    font-size: 1vmax;
+}
+.j-button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1vmax;
+}
+.j-button:hover{
+    background:linear-gradient(to top, yellow,orange,red);
+}
+@media only screen and (max-width:600px) {
+    .j-button{
+        height:3.2vmax;
+    }
+    .j-button a{
+        font-size: 1.4vmax;
+    }   
+}
+/* part3 */
+.main3{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 60vh;
+    width:19vw;
+    border:2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.7vmax;
+    /* transparent background */
+    backdrop-filter: blur(20px);
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    position:absolute;
+    top:22vh;
+    right:3vmax;
+    /* background: linear-gradient(to top,rgba(59, 58, 58, 0.3)50%,rgba(62, 61, 61, 0.3)50%); */
+}
+@media only screen and (max-width:600px) {
+    .main3{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        height: 50vh;
+        width:45vw;
+        position:absolute;
+        top:40vh;
+        right:25%;
+    }
+}
+@media only screen and (max-width:300px) {
+    .main3{
+        width:65vw;
+        position:absolute;
+        top:45vh;
+        right:20%;
+    }
+}
+.h2{
+    height:1.8vmax;
+    width:12vmax;
+    text-align: center;
+    font-family: sans-serif;
+    font-size:1.4vmax;
+    background-color: white;
+    color:#ff7e00;
+    border: 2px solid white;
+    border-radius:0.3vmax;
+    display: inline-block;
+    margin-top:1.2vmax; 
+    padding-top:0.5vmax;
+
+}
+.inp{
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #ff7e00;
+    color:white;
+    font-family: sans-serif;
+    height: 1.5vmax;
+    width:13vmax;
+    margin-top:1.2vmax; 
+    padding-top:0.4vmax;
+}
+.anc{
+    color: #f97d01;
+    text-decoration: none;
+    font-size: 1.3vmax;
+}
+.para{
+    color:white;
+    font-size: 0.9vmax;
+}
+@media only screen and (max-width:600px) {
+    .inp{
+        height: 1.5vmax;
+        width:18vmax;
+        margin-top:1vmax; 
+        padding-top:0.1vmax;
+    } 
+}
+::placeholder{
+    font-size: 0.9vmax;
+    font-family: Arial;
+    color:white;
+}
+#btn{
+    color:black;
+    font-weight:bold;
+}
+.icons a{
+   text-decoration: none;
+    color:white;
+}
+.icons i{
+    font-size:1.5vmax;
+    padding-top:0.5vmax;
+    padding-left: 1vmax;
+    transition: 0.3s ease;
+}
+.icons i:hover{
+    color:#ff7504;
+}
+@media only screen and (max-width:600px) {
+     ::placeholder{
+        font-size:1.4vmax; 
+    }
+    .inp{
+        padding-bottom: 1vmax;
+    } 
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
